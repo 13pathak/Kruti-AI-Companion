@@ -1,0 +1,115 @@
+body {
+    width: 380px;
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 15px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #61dafb;
+}
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 14px;
+    background-color: #3a3f47;
+    color: #e0e0e0;
+}
+textarea::placeholder {
+    color: #a0a0a0;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: #282c34;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+button:hover {
+    background-color: #4fa3d1;
+    transform: translateY(-1px);
+}
+button:active {
+    transform: translateY(0);
+}
+#loading-indicator {
+    margin: 10px 0;
+    font-style: italic;
+    color: #a0a0a0;
+}
+#answer-display {
+    width: 95%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #3a3f47;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+#answer-display p {
+    margin-bottom: 8px;
+}
+.hidden {
+    display: none;
+}
+#focus-button {
+    background-color: #4CAF50;
+    color: white;
+}
+#focus-button:hover {
+    background-color: #45a049;
+}
+#answer-display a {
+    color: #61dafb;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#answer-display a:hover {
+    color: #4fa3d1;
+}
+#answer-display h1,
+#answer-display h2,
+#answer-display h3,
+#answer-display h4,
+#answer-display h5,
+#answer-display h6 {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+#answer-display p {
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+#answer-display ul,
+#answer-display ol {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+#answer-display li {
+    margin-bottom: 4px;
+}
